@@ -2,7 +2,7 @@
 @import 'global';
 @import 'fonts';
 
-
+// start header
 .header__top-inner {
 	display: flex;
 	justify-content: space-between;
@@ -61,6 +61,8 @@
 		color: #ffffff;
 	}
 }
+// end header
+// start search
 
 .search {
 	background-repeat: no-repeat;
@@ -117,3 +119,44 @@ position: relative;
 		}
 	}
 }
+// end search
+// start products
+.products{
+	padding: 110px 0;
+	background-color: $gray;
+}
+
+.products__title{
+	color: $bg;
+}
+.products__inner-btn{
+	text-align: center;
+	margin-bottom: 60px;
+	button{
+		padding: 12px 21px;
+		border: none;
+		background-color: #fff;
+		color: $bg;
+		cursor: pointer
+	}
+	& + button{
+		margin-left: 5px;
+	}
+}
+
+
+
+.products__item{
+	max-width: 420px;
+	width: 100%;
+	&-img{
+		min-width: 250px;
+		background-repeat: no-repeat;
+		display: block;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+
+// end products
