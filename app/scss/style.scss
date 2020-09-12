@@ -1,6 +1,6 @@
-@import 'vars';
-@import 'global';
-@import 'fonts';
+@import "vars";
+@import "global";
+@import "fonts";
 
 // start header
 .header__top-inner {
@@ -16,7 +16,6 @@
 
 	span {
 		color: $red;
-		;
 	}
 }
 
@@ -39,7 +38,6 @@
 
 .header__menu {
 	background-color: $bg;
-
 }
 
 .menu {
@@ -52,7 +50,7 @@
 	li {
 		display: inline-block;
 
-		&+li {
+		& + li {
 			margin-left: 30px;
 		}
 	}
@@ -126,7 +124,6 @@
 
 // end search
 
-
 // start products
 .products {
 	padding: 110px 0;
@@ -147,15 +144,13 @@
 			background-color: $red;
 			color: #fff;
 			outline: none;
-			}
+		}
 	}
 
-	&+button {
+	& + button {
 		margin-left: 5px;
 	}
-
 }
-
 
 .products__inner-box {
 	display: flex;
@@ -185,7 +180,6 @@
 		min-height: 90px;
 		font-weight: 500;
 		border-bottom: 1px solid #e7ecf2;
-		;
 	}
 
 	&-name {
@@ -222,6 +216,7 @@
 	&-autor {
 		display: flex;
 		align-items: center;
+		min-width: 245px;
 
 		.avatar {
 			width: 30px;
@@ -239,6 +234,12 @@
 			font-weight: 500;
 		}
 	}
+	&-star {
+		font-size: 12px;
+		span {
+			color: $bg;
+		}
+	}
 }
 
 .products__bottom-btn {
@@ -253,11 +254,56 @@
 		padding: 20px 30px;
 		cursor: pointer;
 		&.mixitup-control-active {
-		background-color: $red;
-		color: #fff;
+			background-color: $red;
+			color: #fff;
 		}
 	}
 }
 
-
 // end products
+// start products-slider
+.product-slider {
+	padding: 100px 0 120px;
+}
+
+.slick-dots{
+	text-align: center;
+	margin-top: 50px;
+	li{
+
+		display: inline-block;
+		margin-left: 3px;
+		margin-right: 3px;
+		&.slick-active{
+			button{
+				background-color: $green;
+			}
+		}
+		button{
+			border-radius: 50%;
+			background-color: rgb(232, 232, 232);
+			font-size: 0;
+			border: none;
+			width: 16px;
+			height: 16px;
+			outline: none;
+			cursor: pointer;
+		}
+	
+	}
+
+}
+
+// end products-slider
+
+
+
+.Ellipse_6 {
+
+  position: absolute;
+  left: 915px;
+  top: 2761px;
+  width: 22px;
+  height: 22px;
+  z-index: 168;
+}
