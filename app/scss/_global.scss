@@ -7,6 +7,12 @@ html {
 *::before {
 	box-sizing: inherit;
 }
+
+html,
+body {
+	height: 100%;
+}
+
 a {
 	display: inline-block;
 	text-decoration: none;
@@ -43,6 +49,10 @@ body {
 		padding: 0 15px;
 	}
 }
+
+.page-content{
+	background-color: $gray;
+}
 .title {
 	text-align: center;
 	color: $bg;
@@ -57,4 +67,43 @@ body {
 	padding: 13px;
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
 
+.breadcrumbs {
+	&__inner {
+		padding: 45px 0 40px;
+	}
+	&__list {
+		li {
+			display: inline-block;
+			position: relative;
+			& + li {
+				padding-left: 24px;
+				&::before {
+					content: "-";
+					position: absolute;
+					left: 8px;
+					color: $green;
+				}
+			}
+			&:last-child 
+			a{
+				color: $bg;
+			}
+		}
+
+		a {
+			color: #b0bec5;
+		}
+	}
+}
