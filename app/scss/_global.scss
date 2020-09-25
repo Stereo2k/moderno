@@ -11,6 +11,8 @@ html {
 html,
 body {
 	height: 100%;
+	position: relative;
+	overflow-x: hidden;
 }
 
 a {
@@ -31,7 +33,6 @@ body {
 	font-size: 15px;
 	line-height: 24px;
 	color: $text;
-	overflow-x: hidden;
 }
 
 .container {
@@ -75,6 +76,7 @@ body {
 }
 .content {
 	flex: 1 0 auto;
+	background-color: $gray;
 }
 .footer {
 	flex: 0 0 auto;
